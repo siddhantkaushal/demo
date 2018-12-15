@@ -32,15 +32,15 @@ hbs.registerHelper('screamIt', (text)=>{
 })
 
 app.get('/', (req, res) => {
-
   res.render("home.hbs", {pageTitle:'Home Age', welcomeMessage:"Welcome Page"})
-
 });
 
 app.get('/about', (req, res) => {
-
   res.render("about.hbs", {pageTitle:'About Age'  })
+});
 
+app.get('/project', (req, res) => {
+  res.render("project.hbs", {pageTitle:'Project Age' })
 });
 
 app.listen(port, ()=>{
